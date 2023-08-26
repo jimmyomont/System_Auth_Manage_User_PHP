@@ -1,0 +1,19 @@
+# Liste des variable
+
+Fichier config.php :
+DB_HOST: Hôte de la base de données.
+DB_NAME: Nom de la base de données.
+DB_USER: Nom de l'utilisateur MySQL.
+DB_PASS: Mot de passe MySQL.
+
+Fichier connexion.php :
+$_SESSION['user_auth']: Variable de session qui indique si l'utilisateur est authentifié (connecté) ou non.
+$_SESSION['username']: Variable de session qui stocke le nom d'utilisateur de l'utilisateur connecté.
+$pdo: Une instance de la classe PDO pour se connecter à la base de données.
+$pseudo: Variable qui stocke le nom d'utilisateur saisi dans le formulaire de connexion.
+$password: Variable qui stocke le mot de passe saisi dans le formulaire de connexion.
+$error_message: Variable qui stocke le message d'erreur à afficher en cas d'authentification échouée.
+
+
+Fichier profil.php :
+$user: Un tableau associatif qui stocke les données de l'utilisateur connecté, extrait de la base de données.
