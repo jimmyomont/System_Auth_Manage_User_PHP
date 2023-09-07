@@ -2,6 +2,7 @@
 <html>
 
 <head>
+    <link rel="stylesheet" href="style.css">
     <title>Création de Profil</title>
 </head>
 
@@ -12,20 +13,20 @@
     // Démarrer la session pour gérer les variables de session
     session_start();
 
-// Vérifier si l'utilisateur est connecté
-if (!isset($_SESSION['user_auth']) || !$_SESSION['user_auth']) {
-    // Rediriger vers la page de connexion
-    header("Location: connexion.php");
-    exit();
-}
+    // Vérifier si l'utilisateur est connecté
+    if (!isset($_SESSION['user_auth']) || !$_SESSION['user_auth']) {
+        // Rediriger vers la page de connexion
+        header("Location: connexion.php");
+        exit();
+    }
 
-// Vérifier si l'utilisateur a le statut "Administrateur"
-if (isset($_SESSION['user_level']) && $_SESSION['user_level'] !== "Administrateur") {
-    // Afficher le message d'erreur et le lien vers la page de connexion
-    echo "Vous n'avez pas accès à cette page. Seul les administrateurs du site peuvent acceder à cette page ";
-    echo "<a href=\"connexion.php\">Connectez-vous</a>";
-    exit();
-}
+    // Vérifier si l'utilisateur a le statut "Administrateur"
+    if (isset($_SESSION['user_level']) && $_SESSION['user_level'] !== "Administrateur") {
+        // Afficher le message d'erreur et le lien vers la page de connexion
+        echo "Vous n'avez pas accès à cette page. Seul les administrateurs du site peuvent acceder à cette page ";
+        echo "<a href=\"connexion.php\">Connectez-vous</a>";
+        exit();
+    }
     // Vérifier si le formulaire de création de profil a été soumis
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $pseudo = $_POST["pseudo"];

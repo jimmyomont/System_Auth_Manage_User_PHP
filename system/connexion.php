@@ -52,6 +52,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 <html>
 
 <head>
+    <link rel="stylesheet" href="style.css">
     <title>Page de Connexion</title>
 </head>
 

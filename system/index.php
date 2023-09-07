@@ -1,8 +1,11 @@
 <!DOCTYPE html>
 <html>
+
 <head>
+    <link rel="stylesheet" href="style.css">
     <title>Page d'Accueil</title>
 </head>
+
 <body>
     <h2>Page d'Accueil</h2>
     <?php
@@ -24,4 +27,5 @@
     }
     ?>
 </body>
+
 </html>

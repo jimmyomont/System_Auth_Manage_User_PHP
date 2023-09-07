@@ -1,0 +1,192 @@
+/* Variables de couleur */
+:root {
+    --max-width-content: 500px; /* Taille max du contenu */
+    --primary-color: #007bff; /* Couleur principale */
+    --secondary-color: #333; /* Couleur secondaire */
+    --background-color: #f0f0f0; /* Couleur de fond */
+    --border-color: #ccc; /* Couleur de bordure */
+    --font-family: 'Roboto', sans-serif; /* Police de caractères personnalisée */
+    --border-color: grey ;/* Bordure inférieure */
+    --stripe-color-1: white; /* Couleur de fond tableau rayée */
+    --stripe-color-2: rgb(196, 196, 196);/* Couleur de fond tableau alternative */
+    --secondary-color: rgb(76, 73, 73);/* Couleur de fond tableau au survol */
+}
+
+/* Réinitialisation des marges et des espacements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Style global pour le corps de la page */
+body {
+    font-family: var(--font-family);
+    background-color: var(--background-color);
+    padding: 20px;
+    text-align: center; /* Centrage du texte */
+}
+
+/* Style pour les titres h1, h2 et h3 */
+h1, h2, h3 {
+    color: var(--primary-color);
+    margin-bottom: 10px;
+}
+
+/* Style pour les paragraphes */
+p {
+    font-size: 18px; /* Taille de police agrandie */
+    line-height: 1.6;
+    margin-bottom: 20px;
+    color: var(--secondary-color);
+}
+
+/* Style pour les formulaires */
+form {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: left; /* Alignement du texte à gauche */
+    max-width: var(--max-width-content); /* Largeur maximale du formulaire */
+    margin: 0 auto; /* Centrage horizontal */
+}
+
+/* Style pour les sections */
+section {
+    margin: 20px auto;
+    max-width: var(--max-width-content);
+    background-color: #f9f9f9; /* Couleur de fond différente pour les sections */
+    border-radius: 10px;
+    padding: 20px;
+    /* margin-bottom: 20px; */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: left; /* Alignement du texte à gauche */
+}
+
+/* Style pour les articles */
+article {
+    margin: auto;
+    max-width: var(--max-width-content);
+    background-color: #fff; /* Couleur de fond blanche pour les articles */
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: left; /* Alignement du texte à gauche */
+}
+
+/* Style pour les liens */
+a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+/* Style pour les liens au survol */
+a:hover {
+    color: var(--secondary-color);
+}
+
+/* Style pour les listes à puces */
+ul {
+    list-style-type: disc; /* Style de puces */
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+/* Style pour les listes numérotées */
+ol {
+    list-style-position: inside;
+    list-style-type: decimal; /* Style de numérotation */
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+/* Style pour les éléments de liste */
+li {
+    list-style-position: inside;
+    margin-bottom: 5px;
+    color: var(--secondary-color);
+}
+/* Style pour les images */
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Style pour les tableaux */
+table {
+    margin: auto;
+    width: 65%;
+    margin-top: 20px;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Ombre douce */
+    border-radius: 10px; /* Coins arrondis */
+    background-color: #fff; /* Fond blanc */
+}
+
+/* Style pour les cellules de tableau (en-têtes et données) */
+th, td {
+        border: 1px solid black;
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid var(--border-color); /* Bordure inférieure */
+}
+
+/* Style pour les en-têtes de tableau */
+th {
+    border: 1px solid black;
+    background-color: var(--primary-color); /* Couleur de fond */
+    color: #fff; /* Couleur du texte */
+}
+
+/* Style pour les lignes de données impaires */
+tbody tr:nth-child(odd) {
+    background-color: var(--stripe-color-1); /* Couleur de fond rayée */
+}
+
+/* Style pour les lignes de données paires */
+tbody tr:nth-child(even) {
+    background-color: var(--stripe-color-2); /* Couleur de fond alternative */
+}
+
+/* Style pour les cellules de données au survol */
+tbody tr:hover {
+    background-color: var(--secondary-color); /* Couleur de fond au survol */
+    color: #fff; /* Couleur du texte au survol */
+}
+
+/* Style pour les éléments de formulaire */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+textarea,
+select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+/* Style pour les boutons */
+button,
+input[type="button"],
+input[type="submit"] {
+    background-color: var(--primary-color);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+/* Style pour les boutons au survol */
+button:hover,
+input[type="button"]:hover,
+input[type="submit"]:hover {
+    background-color: var(--secondary-color);
+}
